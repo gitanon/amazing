@@ -1,0 +1,85 @@
+.header
+  background: url(../asset/img/header-bg.jpg) no-repeat
+  background-size: cover
+  background-position: right
+
+// .header::after
+//   content: ""
+//   border-style: solid
+//   border-width: 0 0 100px 50px
+//   border-color: transparent transparent light_blue transparent
+//   height: 0
+//   opacity: 0.31
+//   position: absolute
+//   right: 0
+//   top: 0
+//   width: 0
+
+// .header::after
+//   content: ""
+//   border-bottom: 100px solid light_blue
+//   border-left: 100px solid transparent
+//   height: 0
+//   opacity: 0.31
+//   position: absolute
+//   right: 0
+//   top: 0
+//   width: 0
+
+// .triangle
+//   width: 100%
+//   height: 100%
+//   left: 0px
+//   top: 0px
+//   background: linear-gradient(to left top, black 50%, transparent 50%)
+
+.logo
+  background: black
+  color: white
+  font: 700 60px/1 font_firasans
+  margin: 10px 0 0 0
+  padding: 13px 20px 7px
+
+.menu
+  align-items: center
+  background: transparent
+  display: flex
+  margin: 10px 0 0 0
+  position: relative
+
+.trigger
+  align-self: center
+  color: grey_seven
+  display: flex
+  float: right
+  z-index: 0
+
+// .trigger::after
+//   color: grey_seven
+//   content: "Menu"
+//   font: 300 12px font_firasans
+//   position: absolute
+//   left: -6px
+//   bottom: 10px
+
+.trigger:active + .list_header
+  position: static
+  overflow: visible
+  z-index: 1
+
+@media (min-width: tablet)
+  .logo
+    margin: 60px 0 0 0
+    padding: 13px 20px 7px
+
+  .menu
+    margin: 60px 0 0 0
+
+@media (min-width: screen)
+  .logo
+    font: 700 60px/1 font_firasans
+    margin: 80px 0 0 0
+    padding: 13px 20px 7px
+
+  .menu
+    margin: 80px 0 0 0

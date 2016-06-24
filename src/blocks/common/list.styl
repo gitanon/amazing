@@ -1,0 +1,28 @@
+.list
+  list-style: none
+  padding: 0
+
+.list_header
+  display: flex
+  font: 400 16px font_firasans
+  flex-flow: row nowrap
+  left: 9999px
+  overflow: hidden
+  position: absolute
+  top: 0
+  transition: all 0.25s ease-out
+  *zoom: 1
+
+.list_header:hover
+  position: static
+  z-index: 1
+
+.list_header:before
+  content: " "
+  background: transparent
+  display: block
+  height: 20px
+  position: absolute
+  left: 0
+  top: 0
+  width: 100%

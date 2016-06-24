@@ -1,0 +1,33 @@
+.wrap
+  grid-mobile()
+
+.wrapper
+  box-sizing: border-box
+  margin: 0 auto
+  padding: 0 10px
+  width: 100%
+
+.wrap_header
+  display: flex
+  flex-flow: row nowrap
+  justify-content: space-between
+
+.wrap_header-content
+  display: flex
+  flex-flow: column nowrap
+
+@media (min-width: tablet)
+  .wrap
+    grid()
+
+  .wrapper
+    width: tablet
+
+@media (min-width: screen)
+  .wrapper
+    width: screen
+
+@media (min-width: screen_large)
+  .wrapper
+    padding: 0 20px
+    width: 1180px
