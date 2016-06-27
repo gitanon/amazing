@@ -15,15 +15,15 @@
           <div class="logo">/.</div>
           <nav class="menu"><a class="link trigger fa fa-bars" href=""></a>
             <ul class="list list_header">
-              <li class="list__item_header"><a class="link link_header" href="#">About</a></li>
-              <li class="list__item_header"><a class="link link_header" href="#">Gallery</a></li>
-              <li class="list__item_header"><a class="link link_header" href="#">Music</a></li>
+              <li><a class="link link_header" href="#">About</a></li>
+              <li><a class="link link_header" href="#">Gallery</a></li>
+              <li><a class="link link_header" href="#">Music</a></li>
             </ul>
           </nav>
         </div>
         <div class="wrap_header-content">
           <div class="title title_header">Amazing Dude. Amazing Life.</div>
-          <div class="description description_header">Welcome to the personal site of <span class="description_mark">John Doe.</span> A professional skier and a musician.</div>
+          <div class="description description_header">Welcome to the personal site of <span class="description__mark">John Doe.</span> A professional skier and a musician.</div>
         </div>
       </div>
     </header>
@@ -34,12 +34,7 @@
       </div>
     </section>
     <section class="gallery">
-      <div class="wrap">
-        <div class="image"><img src="asset/img/image-gallery-1.jpg" alt=""/></div>
-        <div class="image"><img src="asset/img/image-gallery-2.jpg" alt=""/></div>
-        <div class="image"><img src="asset/img/image-gallery-3.jpg" alt=""/></div>
-        <div class="image"><img src="asset/img/image-gallery-4.jpg" alt=""/></div>
-      </div>
+      <div class="wrap"><img class="image" src="asset/img/image-gallery-1.jpg" alt=""/><img class="image" src="asset/img/image-gallery-2.jpg" alt=""/><img class="image" src="asset/img/image-gallery-3.jpg" alt=""/><img class="image" src="asset/img/image-gallery-4.jpg" alt=""/></div>
       <div class="wrap">
         <div class="text text_gallery">
           <div class="title">Instagram</div>
@@ -50,58 +45,63 @@
     </section>
     <section class="music">
       <div class="wrap">
-        <div class="image"></div>
-        <div class="text_music">
-          <div class="title">Self-Effacing Rage FT. Fascinating Collision</div>
-          <ul class="list">
-            <li class="list__item_music">Director: James G. Rohrer</li>
-            <li class="list__item_music">Production Company: Sycamore</li>
-            <li class="list__item_music">Producer: Laura S. Carlton</li>
-            <li class="list__item_music">Executive Producer: Jack M. Heckart</li>
+        <div class="image image_none-music"></div>
+        <div class="text text_music">
+          <div class="title title_music">Self-Effacing Rage<br><span class="title__mark">FT. Fascinating Collision</span></div>
+          <ul class="list list_music">
+            <li class="list__item">Director: James G. Rohrer</li>
+            <li class="list__item">Production Company: Sycamore</li>
+            <li class="list__item">Producer: Laura S. Carlton</li>
+            <li class="list__item">Executive Producer: Jack M. Heckart</li>
           </ul><a class="button button_music" href="#">Click to play ►</a>
-        </div>
-        <div class="image_music"></div>
+        </div><img class="image_music" src="asset/img/image-music.jpg" alt=""/>
       </div>
       <div class="wrap">
-        <div class="text">
+        <div class="text text_spotify">
           <div class="title">Spotify</div>
-          <div class="description">Follow me, stream and add my songs to your Spotify playlist.</div><a class="button button_spotify" href="#">Follow on Spotify</a>
+          <div class="description">Follow me, stream and add my songs to your Spotify playlist.</div><a class="button" href="#">Follow on Spotify</a>
         </div>
-        <div class="text">
+        <div class="text text_itunes">
           <div class="title">Itunes</div>
           <div class="description">Buy and download my songs from iTunes.</div><a class="button button_itunes" href="#">Buy from Itunes</a>
         </div>
       </div>
     </section>
     <footer class="footer">
-      <div class="wrap_footer">
-        <div class="title_footer">AMAZING DUDE. AMAZING LIFE.</div>
-        <div class="description_footer">Mauris ornare lobortis arcu, at sodales dolor finibus nec. In convallis risus ligula, bibendum sagittis ante cursus vitae. Donec ornare, dui nec sagittis imperdiet, nunc eros dignissim augue, ut aliquam nibh felis sit amet leo. Vivamus eu tincidunt tellus. Vestibulum quis condimentum lectus, nec aliquet lectus. Duis sollicitudin facilisis dui ac aliquet. Phasellus tempor sollicitudin augue, id hendrerit enim gravida non. Integer consequat vel arcu quis dictum. Vestibulum viverra commodo nunc eu pellentesque. Phasellus in scelerisque elit, eu ultricies mauris.<br> Ⓒ2015. all rights reserved.</div>
-        <div class="contact">
-          <div class="title_footer">Contact me</div>
-          <div class="description_footer">1242 Crestview Terrace Artesia Wells, TX 78001 Phone: 830-676-7974 Email: halo@sitename.com</div>
+      <div class="wrapper wrap_footer">
+        <div class="site">
+          <div class="title title_footer">AMAZING DUDE. AMAZING LIFE.</div>
+          <div class="description description_footer">Mauris ornare lobortis arcu, at sodales dolor finibus nec. In convallis risus ligula, bibendum sagittis ante cursus vitae. Donec ornare, dui nec sagittis imperdiet, nunc eros dignissim augue, ut aliquam nibh felis sit amet leo. Vivamus eu tincidunt tellus. Vestibulum quis condimentum lectus, nec aliquet lectus. Duis sollicitudin facilisis dui ac aliquet. Phasellus tempor sollicitudin augue, id hendrerit enim gravida non. Integer consequat vel arcu quis dictum. Vestibulum viverra commodo nunc eu pellentesque. Phasellus in scelerisque elit, eu ultricies mauris.<br> Ⓒ2015. all rights reserved.</div>
         </div>
-        <div class="social">
-          <div class="title_footer">Follow me on</div>
-          <ul class="list">
-            <li class="list__item_footer"><a class="link" href="#"><i class="fa fa-facebook"></i>Facebook</a></li>
-            <li class="list__item_footer"><a class="link" href="#"><i class="fa fa-twitter"></i>Twitter</a></li>
-            <li class="list__item_footer"><a class="link" href="#"><i class="fa fa-instagram"></i>Instagram</a></li>
-            <li class="list__item_footer"><a class="link" href="#"><i class="fa fa-spotify"></i>Spotify</a></li>
-          </ul>
+        <div>
+          <div class="contact">
+            <div class="title title_footer">Contact me</div>
+            <div class="description description_footer">1242 Crestview Terrace Artesia Wells, TX 78001 Phone: 830-676-7974 Email: halo@sitename.com</div>
+          </div>
+          <div class="social"> 
+            <div class="title title_footer">Follow me on</div>
+            <ul class="list">
+              <li><a class="link link_footer" href="#"><i class="fa fa-facebook"></i>Facebook</a></li>
+              <li><a class="link link_footer" href="#"><i class="fa fa-twitter"></i>Twitter  </a></li>
+              <li><a class="link link_footer" href="#"><i class="fa fa-instagram"></i>Instagram  </a></li>
+              <li><a class="link link_footer" href="#"><i class="fa fa-spotify"></i>Spotify</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="subscribe">
-          <div class="title_footer">Subscribe</div>
-          <div class="description_footer">Duis sollicitudin facilisis dui ac aliquet. Phasellus   tempor sollicitudin augue, id hendrerit enim gravida non. Integer consequat vel   arcu quis dictum. Vestibulum viverra commodo nunc eu pellentesque.</div>
-          <input type="email" placeholder="ENTER YOUR EMAIL ADDRESS"/>
-          <button type="submit"></button>
-        </div>
-        <div class="sponsor">
-          <div class="title_footer">Sponsor</div>
-          <div class="wrap">
-            <div class="logo_sponsor"></div>
-            <div class="logo_sponsor"></div>
-            <div class="logo_sponsor"></div>
+        <div>
+          <div class="subscribe">
+            <div class="title title_footer">Subscribe</div>
+            <div class="description description_footer">Duis sollicitudin facilisis dui ac aliquet. Phasellus   tempor sollicitudin augue, id hendrerit enim gravida non. Integer consequat vel   arcu quis dictum. Vestibulum viverra commodo nunc eu pellentesque.</div>
+            <input class="input" type="email" placeholder="ENTER YOUR EMAIL ADDRESS"/>
+            <button class="fa fa-arrow-right button-footer" type="submit"> </button>
+          </div>
+          <div class="sponsors">
+            <div class="title title_footer">Sponsor</div>
+            <div class="wrap">
+              <div class="logo_sponsor"></div>
+              <div class="logo_sponsor"></div>
+              <div class="logo_sponsor"></div>
+            </div>
           </div>
         </div>
       </div>
