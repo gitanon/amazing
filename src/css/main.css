@@ -79,6 +79,11 @@
   color: #919191;
   font: 700 14px 'Fira Sans', Arial, sans-serif;
   text-transform: uppercase;
+  -webkit-transition: color 200ms ease-in;
+  transition: color 200ms ease-in;
+}
+.link_footer:hover {
+  color: #2ebd59;
 }
 .list {
   list-style: none;
@@ -90,7 +95,7 @@
   display: flex;
   -ms-flex-flow: row nowrap;
       flex-flow: row nowrap;
-  left: 9999px;
+  right: 9999px;
   overflow: hidden;
   position: absolute;
   top: 0;
@@ -229,7 +234,7 @@
     font-size: 22px;
     margin: 0 0 150px 0;
   }
-  .description_mark {
+  .description__mark {
     font-size: 22px;
   }
   .description_header {
@@ -250,7 +255,7 @@
     margin: 0 0 200px 0;
     width: 49%;
   }
-  .description_mark {
+  .description__mark {
     font-size: 30px;
   }
   .description_footer {
@@ -313,10 +318,26 @@
   .text {
     padding: 50px 36px;
   }
+  .text_about,
+  .text_itunes {
+    padding: 50px 144px 50px 36px;
+  }
+  .text_gallery,
+  .text_spotify {
+    padding: 50px 36px 50px 144px;
+  }
 }
 @media (min-width: 90em) {
   .text {
     padding: 100px 50px;
+  }
+  .text_about,
+  .text_itunes {
+    padding: 100px 250px 100px 50px;
+  }
+  .text_gallery,
+  .text_spotify {
+    padding: 100px 50px 100px 250px;
   }
 }
 .button {
@@ -463,10 +484,6 @@
 .social {
   width: 180px;
 }
-.subscribe,
-.sponsors {
-  width: 480px;
-}
 .fa-facebook {
   padding: 0 18px 0 0;
 }
@@ -477,25 +494,61 @@
 .fa-spotify {
   padding: 0 15px 0 0;
 }
+.form {
+  position: relative;
+  margin: 0 0 15px 0;
+}
 .input {
+  color: #141414;
   background-color: #909193;
   border: none;
   font: 300 14px 'Fira Sans', Arial, sans-serif;
   opacity: 0.4;
   padding: 21px 19px 17px;
-  width: 100%;
+  width: 90%;
 }
 .button-footer {
   color: #141414;
-  background: #909193;
+  cursor: pointer;
+  background: transparent;
   border: none;
   font-size: 18px;
   font-weight: 400;
   opacity: 0.4;
   padding: 0;
+  position: absolute;
+  right: 5%;
+  top: 21px;
+}
+.button-footer:hover {
+  color: #f9f9f9;
+}
+.logo_sponsor {
+  color: #fff;
+  border: solid 1px #fff;
+  box-sizing: border-box;
+  float: left;
+  font: 700 14px 'Fira Sans', Arial, sans-serif;
+  height: 80px;
+  margin: 0 20px 20px 0;
+  text-align: center;
+  line-height: 80px;
+  text-transform: uppercase;
+  width: 80px;
 }
 @media (min-width: 64em) {
   .footer {
     padding: 100px 0;
+  }
+  .contact,
+  .social {
+    margin: 0 0 80px 0;
+  }
+  .subscribe,
+  .sponsors {
+    width: 480px;
+  }
+  .form {
+    margin: 0 0 80px 0;
   }
 }
