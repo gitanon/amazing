@@ -82,7 +82,7 @@ gulp.task('minify:html', function() {
 });
 
 gulp.task('images', function(){
-  return gulp.src('src/asset/*.+(png|jpg)')
+  return gulp.src('src/asset/**/*.+(png|jpg)')
   .pipe(imagemin())
   .pipe(gulp.dest('build/asset'));
 });
